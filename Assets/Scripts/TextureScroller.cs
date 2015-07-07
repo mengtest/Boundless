@@ -27,7 +27,7 @@ public class TextureScroller : MonoBehaviour {
 
 		distance += offset;
 		if(distanceText != null) {
-			distanceText.text = "Distance: " + (distance/100).ToString("F0") + "cm";
+			distanceText.text = "Distance: " + (distance/100).ToString("F0") + "m";
 		}
 
 		render.material.SetTextureOffset("_MainTex", new Vector2(initialOffset.x, offset));
